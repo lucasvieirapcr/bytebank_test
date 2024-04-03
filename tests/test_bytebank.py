@@ -3,8 +3,8 @@ from codigo.bytebank import Funcionario
 class TestClass:
     def test_quando_idade_recebe_13_03_200_deve_retornar_22(self):
         #Given(contexto)
-        entrada = '13/03/200'
-        esperado = 22
+        entrada = '14/05/2004'
+        esperado = 20
 
         funcionario_test = Funcionario('Teste', entrada, 3400)
 

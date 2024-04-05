@@ -30,6 +30,12 @@ class Funcionario:
         if valor > 1000:
             valor = 0
         return valor
+    
+    def decrescimo_salario(self):
+        sobrenomes_dos_diretores = ['Silva', 'Vieira', 'Alves', 'Gonçalves', 'Bragança', 'Borges', 'Viana', 'Areda']
+        if self.salario >= 10000 and (self.sobrenome() in sobrenomes_dos_diretores):
+            decrescimo = self._salario * 0.1
+            self._salario = self._salario - decrescimo
 
     def __str__(self):
         return f'Funcionario({self._nome}, {self._data_nascimento}, {self._salario})'
